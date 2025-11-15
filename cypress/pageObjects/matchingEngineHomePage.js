@@ -14,7 +14,8 @@ class MatchingEngineHomePage {
     expandModules() {
         cy.log('Hovering over Modules to expand menu.');
         this.headerModulesLink().trigger('mouseover', { force: true });
-        cy.wait(500);
+        cy.get('#burger').should('be.visible');
+        //cy.wait(500);
     }
 
     goToRepertoireManagement() {

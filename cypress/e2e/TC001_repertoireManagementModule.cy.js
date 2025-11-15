@@ -1,6 +1,3 @@
-
-/// <reference types="cypress" />
-
 import matchingEngineHomePage from '../pageObjects/matchingEngineHomePage';
 import repertoireManagementModulePage from '../pageObjects/repertoireManagementModulePage';
 
