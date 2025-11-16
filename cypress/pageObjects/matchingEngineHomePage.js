@@ -13,14 +13,14 @@ class MatchingEngineHomePage {
 
     expandModules() {
         cy.log('Hovering over Modules to expand menu.');
-        this.headerModulesLink().trigger('mouseover', { force: true });
-        cy.get('#burger').should('be.visible');
+        //this.headerModulesLink().trigger('mouseover', { force: true });
+        cy.get('#burger').should('be.visible').click();
         //cy.wait(500);
     }
 
     goToRepertoireManagement() {
         cy.log('Clicking Repertoire Management Module link.');
-        this.repertoireManagementLink().click({ force: true }); 
+        this.repertoireManagementLink().click(); 
     }
 }
 
